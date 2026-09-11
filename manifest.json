@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Meet Attire",
-  "version": "1.1.0",
-  "description": "Swap professional upper-body attire on your Google Meet camera \u2014 100% local processing.",
+  "version": "1.2.0",
+  "description": "Pose-tracked photoreal upper-body attire on Google Meet — local MediaPipe compositing (not neural VITON).",
   "action": {
     "default_title": "Meet Attire"
   },
@@ -34,7 +34,9 @@
         "content/panel.css",
         "assets/attire/*",
         "assets/attire/thumbs/*",
-        "assets/icons/*"
+        "assets/icons/*",
+        "vendor/mediapipe/*",
+        "vendor/mediapipe/wasm/*"
       ],
       "matches": [
         "https://meet.google.com/*"
