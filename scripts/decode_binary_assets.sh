@@ -7,10 +7,19 @@ cd "$ROOT"
 
 mkdir -p assets/icons assets/attire/thumbs content
 
+b64_decode() {
+  # Portable: macOS base64 differs from GNU coreutils
+  if base64 --help 2>&1 | grep -q -- '-d'; then
+    base64 -d
+  else
+    base64 -D
+  fi
+}
+
 for f in assets/icons/b64/*.png.b64; do
   [ -f "$f" ] || continue
   base="$(basename "$f" .b64)"
-  base64 -d "$f" > "assets/icons/$base"
+  b64_decode < "$f" > "assets/icons/$base"
   echo "wrote assets/icons/$base"
 done
 
@@ -21,7 +30,7 @@ for f in assets/attire/b64/*.png.b64; do
     thumb-*) out="assets/attire/thumbs/${name#thumb-}" ;;
     *) out="assets/attire/$name" ;;
   esac
-  base64 -d "$f" > "$out"
+  b64_decode < "$f" > "$out"
   echo "wrote $out"
 done
 
@@ -33,7 +42,7 @@ for f in content/b64/*.js.gz.b64; do
     echo "skip $f (bootstrap is source of truth)"
     continue
   fi
-  base64 -d "$f" | gzip -d > "content/$base"
+  b64_decode < "$f" | gzip -d > "content/$base"
   echo "wrote content/$base (gunzip)"
 done
 
