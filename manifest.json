@@ -31,6 +31,9 @@
     {
       "resources": [
         "content/inject.js",
+        "content/content.ui.js",
+        "content/b64/*",
+        "content/panel.css",
         "assets/attire/*",
         "assets/attire/thumbs/*",
         "assets/icons/*"
