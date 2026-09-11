@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="40 60 432 500">
+        <defs>
+          <pattern id="plaid" width="28" height="28" patternUnits="userSpaceOnUse">
+            <rect width="28" height="28" fill="#d2b98c"/>
+            <line x1="0" y1="0" x2="0" y2="28" stroke="#281e14" stroke-width="2" opacity="0.35"/>
+            <line x1="0" y1="0" x2="28" y2="0" stroke="#281e14" stroke-width="2" opacity="0.35"/>
+            <line x1="14" y1="0" x2="14" y2="28" stroke="#8c2828" stroke-width="1" opacity="0.3"/>
+            <line x1="0" y1="14" x2="28" y2="14" stroke="#8c2828" stroke-width="1" opacity="0.3"/>
+          </pattern>
+        </defs>
+  <path d="M216 100 L176 140 L50 150 L20 280 L90 300 L110 620 L402 620 L422 300 L492 280 L462 150 L336 140 L296 100 L280 155 L256 170 L232 155 Z" fill="url(#plaid)" opacity="0.95"/>
+  <path d="M216 100 L246 140 L220 165 L170 130 Z" fill="#b89a6e" opacity="0.95"/>
+  <path d="M296 100 L266 140 L292 165 L342 130 Z" fill="#b89a6e" opacity="0.95"/>
+  <circle cx="256" cy="176" r="5" fill="#ddd"/><circle cx="256" cy="216" r="5" fill="#ddd"/><circle cx="256" cy="256" r="5" fill="#ddd"/>
+</svg>
