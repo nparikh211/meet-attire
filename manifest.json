@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Attire",
+  "version": "1.0.0",
+  "description": "Swap professional upper-body attire on your Google Meet camera \u2014 100% local processing.",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Meet Attire",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/inject.js",
+        "assets/attire/*",
+        "assets/attire/thumbs/*",
+        "assets/icons/*"
+      ],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ]
+}
