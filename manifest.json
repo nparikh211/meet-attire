@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Meet Attire",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Swap professional upper-body attire on your Google Meet camera \u2014 100% local processing.",
   "action": {
     "default_title": "Meet Attire"

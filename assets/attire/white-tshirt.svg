@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="640" viewBox="0 0 512 640">
-  <path d="M210 110 L160 145 L40 155 L15 290 L95 310 L115 620 L397 620 L417 310 L497 290 L472 155 L352 145 L302 110
-           C302 110 280 175 256 175 C232 175 210 110 210 110 Z" fill="#f5f5f8" opacity="0.95"/>
-  <path d="M210 110 C220 155 240 175 256 175 C272 175 292 155 302 110" fill="none" stroke="#c8c8c8" stroke-width="4"/>
+  <!-- torso tee: transparent above neckline -->
+  <path d="M96 170 L170 150 L210 195 L256 210 L302 195 L342 150 L416 170 L460 250 L400 280 L390 620 L122 620 L112 280 L52 250 Z"
+        fill="#f5f5f7" opacity="0.96"/>
+  <path d="M210 195 L256 210 L302 195 L280 155 L256 165 L232 155 Z" fill="none"/>
+  <ellipse cx="256" cy="188" rx="52" ry="28" fill="none"/>
 </svg>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="640" viewBox="0 0 512 640">
-  <defs><pattern id="ox" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#aabddc"/><circle cx="1" cy="1" r="0.6" fill="#000" opacity="0.08"/></pattern></defs>
-  <path d="M216 90 L170 130 L55 145 L30 270 L95 295 L120 620 L392 620 L417 295 L482 270 L457 145 L342 130 L296 90 L280 145 L256 160 L232 145 Z"
-        fill="url(#ox)" opacity="0.95"/>
-  <path d="M216 90 L248 145 L220 170 L160 120 Z" fill="#aabddc" stroke="#000" stroke-opacity="0.1"/>
-  <path d="M296 90 L264 145 L292 170 L352 120 Z" fill="#aabddc" stroke="#000" stroke-opacity="0.1"/>
-  <rect x="242" y="155" width="28" height="420" fill="#aabddc" opacity="0.85"/>
-  <circle cx="256" cy="185" r="4" fill="#f0f0f5"/><circle cx="256" cy="230" r="4" fill="#f0f0f5"/>
-  <circle cx="256" cy="275" r="4" fill="#f0f0f5"/><circle cx="256" cy="320" r="4" fill="#f0f0f5"/>
-  <circle cx="256" cy="365" r="4" fill="#f0f0f5"/><circle cx="256" cy="410" r="4" fill="#f0f0f5"/>
-  <rect x="146" y="230" width="60" height="70" rx="4" fill="none" stroke="#000" stroke-opacity="0.25" stroke-width="2"/>
+  <path d="M88 180 L165 155 L205 205 L256 220 L307 205 L347 155 L424 180 L470 265 L405 295 L395 620 L117 620 L107 295 L42 265 Z"
+        fill="#9ec5e8" opacity="0.94"/>
+  <path d="M205 205 L248 235 L220 175 L165 155 Z" fill="#b7d4f0" stroke="#000" stroke-opacity="0.1"/>
+  <path d="M307 205 L264 235 L292 175 L347 155 Z" fill="#b7d4f0" stroke="#000" stroke-opacity="0.1"/>
+  <rect x="248" y="235" width="16" height="360" fill="#8ebadf" opacity="0.85"/>
+  <circle cx="256" cy="270" r="3.5" fill="#dceaf7"/>
+  <circle cx="256" cy="320" r="3.5" fill="#dceaf7"/>
+  <circle cx="256" cy="370" r="3.5" fill="#dceaf7"/>
+  <circle cx="256" cy="420" r="3.5" fill="#dceaf7"/>
 </svg>
