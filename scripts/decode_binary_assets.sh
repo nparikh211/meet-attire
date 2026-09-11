@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Restore PNG icons and optional raster attire overlays from base64 sidecars.
+# Restore PNG icons, optional raster attire overlays, and content JS from base64 sidecars.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
-mkdir -p assets/icons assets/attire/thumbs
+mkdir -p assets/icons assets/attire/thumbs content
 
 for f in assets/icons/b64/*.png.b64; do
   [ -f "$f" ] || continue
@@ -26,6 +26,13 @@ for f in assets/attire/b64/*.png.b64; do
   esac
   base64 -d "$f" > "$out"
   echo "wrote $out"
+done
+
+for f in content/b64/*.js.b64; do
+  [ -f "$f" ] || continue
+  base="$(basename "$f" .b64)"
+  base64 -d "$f" > "content/$base"
+  echo "wrote content/$base"
 done
 
 echo "Done."
