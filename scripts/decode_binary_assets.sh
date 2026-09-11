@@ -25,6 +25,7 @@ for f in assets/attire/b64/*.png.b64; do
   echo "wrote $out"
 done
 
+# Restore helper JS (inject + UI), never bootstrap content.js
 for f in content/b64/*.js.gz.b64; do
   [ -f "$f" ] || continue
   base="$(basename "$f" .gz.b64)"
