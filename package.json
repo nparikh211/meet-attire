@@ -1,0 +1,24 @@
+{
+  "name": "meet-attire",
+  "version": "1.2.0",
+  "description": "Chrome Manifest V3 extension that overlays professional upper-body attire onto your Google Meet camera feed. Processing is 100% local.",
+  "main": "index.js",
+  "scripts": {
+    "fetch:mediapipe": "bash scripts/fetch_mediapipe.sh",
+    "assets": "python3 scripts/generate_assets.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nparikh211/meet-attire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nparikh211/meet-attire/issues"
+  },
+  "homepage": "https://github.com/nparikh211/meet-attire#readme",
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1"
+  }
+}

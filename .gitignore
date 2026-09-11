@@ -9,3 +9,10 @@ node_modules/
 dist/
 .tmp/
 .cache/
+
+# MediaPipe binaries (fetch with scripts/fetch_mediapipe.sh)
+vendor/mediapipe/*.task
+vendor/mediapipe/*.tflite
+vendor/mediapipe/wasm/
+vendor/mediapipe/vision_bundle.*
+node_modules/
